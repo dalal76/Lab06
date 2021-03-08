@@ -73,7 +73,8 @@ For Denny's
 
 ```{r}
 dn <- dennys %>%
-   mutate(country = "United States")
+mutate(country = "United States")
+
 ```
 
 
@@ -86,8 +87,9 @@ lq <- laquinta %>%
 Knit, *commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
 
-4.  Which states have the most and fewest Denny's locations? What about La Quinta? Is this surprising? Why or why not?
-
+4.  Which states have the most and fewest Denny's locations? What about La Quinta? Is this surprising? Why or why not?=
+ Dennys the most = CA    and the fewest = DE
+La Quinta the most= TX   and the fewes = AG
 For Denny's - Most
 
 ```{r}
@@ -111,9 +113,9 @@ dn %>%
 For La Quinta - Most
 
 ```{r}
-lq %>%
-    count(state) %>%
-    arrange(desc(n))
+ lq %>%
+     count(state) %>%
+     arrange(desc(n))
 ```
 
 \textcolor{red}{TX, Texas has the most La Quinta locations. The surprising thing is that Texas has more locations than California. This despite the fact that California has more population and has stronger economy than Texas}
