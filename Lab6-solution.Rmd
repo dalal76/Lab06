@@ -73,7 +73,7 @@ For Denny's
 
 ```{r}
 dn <- dennys %>%
-    mutate(country = "United States")
+   mutate(country = "United States")
 ```
 
 
