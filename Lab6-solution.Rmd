@@ -15,8 +15,8 @@ knitr::opts_chunk$set(eval = TRUE)
 Load the needed packages. Note: dsbox is not yet on CRAN. For now, you need to install it before you load the library. Uncomment, by deleting # from, the two lines of code below.
 
 ```{r message = FALSE}
-#install.packages("devtools")
-#devtools::install_github("rstudio-education/dsbox")
+install.packages("devtools")
+devtools::install_github("rstudio-education/dsbox")
 ```
 
 Load the libraries here.
@@ -37,6 +37,10 @@ states <- read_csv("data/states.csv")
 1.  What are the dimensions of the Denny's dataset?
     (Hint: Use inline R code and functions like `nrow` and `ncol` to compose your answer.) What does each row in the dataset represent?
     What are the variables?
+    raw= 1643 , colum= 6
+the raw it's about the resturant address (more information about it's)
+
+colum(address , city , state , zip , longitude , latitude)
     
 ```{r}
 dim(dennys)
@@ -48,7 +52,11 @@ dim(dennys)
 2.  What are the dimensions of the La Quinta's dataset? 
     What does each row in the dataset represent?
     What are the variables?
+    raw= 909 , colum=6
     
+ the raw it's about the hotels address (more information about it's)
+
+colum(address , city , state , zip , longitude , latitude)
     
 ```{r}
 dim(laquinta)
