@@ -12,7 +12,7 @@ Student ID: 2201003144
 knitr::opts_chunk$set(eval = TRUE)
 ```
 
-Load the needed packages. Note: dsbox is not yet on CRAN. For now, you need to install it before you load the library. Uncomment, by deleting # from, the two lines of code below.
+Load the needed packages. Note: dsbox is not yet on CRAN. For now, you need to install it before you load the library. Uncomment, by deleting # from, the two lin es of code below.
 
 ```{r message = FALSE}
 install.packages("devtools")
